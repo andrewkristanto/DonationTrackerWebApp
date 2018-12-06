@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <div class="main">
+        <h1>Donation - Register</h1>
+        <div class="input">
+            <form>
+                Username <input type="text" id="username">
+                <br><br>
+                Password <input type="password" id="password">
+                <br><br>
+                Confirm Password <input type="password" id="password2">
+                <br><br>
+                Account Type
+                <select id = "type">
+                        <option value="1">User</option>
+                        <option value="2">Location Employee</option>
+                        <option value="3">Manager</option>
+                        <option value="4">Admin</option>
+                </select>
+                <br><br>
+            </form>
+        </div>
+        <button onclick = 'register()'>Register</button>
+        <br>
+        <button onclick = 'loadWelcome()'>Cancel</button>
+    </div>
+</body>
+</html>

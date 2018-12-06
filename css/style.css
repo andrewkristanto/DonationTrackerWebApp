@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+    background-image: url("https://ideasphere.com/wp-content/uploads/2016/08/Savin-NY-Website-Background-Web-1-1024x576.jpg");
+    background-size: cover;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+}
+
+select, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    align-content: center;
+    text-align: center;
+    border: 1px solid gray ;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 2.3em;
+    padding: 2em 3em;
+}
+
+.main h1 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.main button {
+    margin: 0.7em;
+    padding: 0.5em;
+    width: 150px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+table th, table td {
+    padding: 5px;
+}
+
+.input {
+    display: flex;
+    width: 300px;
+    margin: auto;
+    justify-content: center;
+}
+
+.input input {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.input select {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.input .detail input {
+    width: 50%;
+    margin: 3px;
+}
+
+button {
+    background-color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+    border: 1px solid gray;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+}
+i {
+    float:left;
+    font-size: 1.3em;
+    color: black;
+    transition: color 0.3s;
+}
+
+i:hover {
+    color: darkgreen;
+}
