@@ -1,3 +1,10 @@
+if (storageAvailable('localStorage')) {
+  localStorage.set('Andrew', 'Kristanto');
+}
+else {
+  alert('No storage available.');
+}
+
 var users = new Map();
 users.set('Andrew', 'Kristanto');
 
@@ -25,15 +32,11 @@ function verify_login(){
   console.log('verfying login');
   var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
-  if (users.has(username)) {
-    if (users.get(username) == password) {
-      console.log('login success');
-      loadMain();
-    } else {
-      alert("Incorrect password.");
-    }
+  if (localStorage.getItem(username) == password) {
+    console.log('login success');
+    loadMain();
   } else {
-    alert("User does not exist.");
+    alert("Incorrect username or password.");
   }
 }
 
@@ -43,7 +46,7 @@ function register(){
   var password = document.getElementById('password').value;
   var password2 = document.getElementById('password2').value;
   var type = document.getElementById('type').value;
-  if (users.has(username)){
+  if (localStorage.getItem(username) != null){
     alert("Username already exists.");
   } else if (username.length == 0) {
     alert("Username cannot be null.");
@@ -53,7 +56,7 @@ function register(){
     alert("Passwords do not match.");
   } else {
     console.log('register success');
-    users.set(username, password);
+    localStorage.setItem(username, password);
     loadWelcome();
   }
 }
