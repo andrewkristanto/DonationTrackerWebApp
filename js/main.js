@@ -1,13 +1,3 @@
-if (storageAvailable('localStorage')) {
-  localStorage.set('Andrew', 'Kristanto');
-}
-else {
-  alert('No storage available.');
-}
-
-var users = new Map();
-users.set('Andrew', 'Kristanto');
-
 function loadLogin(){
   console.log('swapping to login page');
   location.href = "./login.html";
